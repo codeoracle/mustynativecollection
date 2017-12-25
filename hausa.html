@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hausa Shopping Cart </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+.shopping-cart {
+  width: 950px;
+  height: 580px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+ 
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+ 
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.image {
+  margin-right: 70px;
+}
+ 
+Let’s add some basic style to  product name and description.
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+</style>
+</head>
+<body>
+<div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Cart
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+ 
+    <div class="image">
+	<h1 style="color: red;"> Hausa Style </h1>
+      <img src="molastyle.jpg" alt="" style="width:200px;height:220px />
+	      </div><br>
+		  </div>
+		   
+    <div class="description">
+      
+          </div>
+     <div class="quantity">
+	 <form action="success.html">
+	 <h4> ADDITIONAL INFOMATION </h4>
+	<p> Quantity</p>
+            <input type="text" name="name" value="1"><br>
+			<br>
+			<!-- Provide a drop-down menu option field. -->
+        <label>Choose Color</label>
+        <select>
+            <option value="Select a color scheme">
+                -- Select a color scheme --</option>
+            <option value="Blue">Blue</option>
+            <option value="Pink">Pink</option>
+            <option value="Yellow">Yellow</option>
+        </select><br>
+		<br>
+		<!-- Provide a drop-down menu option field. -->
+       <label>Choose Size</label><br>
+        <select>
+            <option value="Select a color scheme">
+                -- Select a Size --</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+			<option value="Xtra Large">Xtra Large</option>
+        </select>
+			<br>
+		<br>
+		<label> Upload Sample Style </label><br>
+		<input type="file"></input>
+				<br>
+				<br>
+				Do You Have Explanation?
+		<br>
+		<label>Comment Here </label><br>
+		<input type="textarea";></input>
+		<br>
+		<br>
+		<input type="submit" value="SAVE" style="background-color: red; color: white; border: solid 2px red">
+		</form>
+		         </div>
+ <br>
+ <br>
+    <div class="total-price"><b>#35,000</b>
+	<p> Description </p>
+      <p> Hausa style is hausa tradition wear<p>
+	</div>
+  </div>
